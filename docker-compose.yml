@@ -1,0 +1,30 @@
+version: '3.3'
+
+services:
+  web:
+    build: ./web
+    volumes:
+      - ./web/public:/usr/src/app/public
+    ports:
+      - 80:8080
+
+  api:
+    build: ./api
+    volumes:
+      - ./api/app:/app/app
+      - ./api/public:/var/www/html
+    ports:
+      - 8080:80
+
+  db:
+    image: mariadb
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: foobar
+      MYSQL_DATABASE: worktime_dev
+
+volumes:
+  db_data:

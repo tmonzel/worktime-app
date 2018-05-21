@@ -1,0 +1,29 @@
+{
+  "name": "worktime_app_frontend",
+  "version": "0.1.0",
+  "description": "Frontend for Worktime Application",
+  "main": "server.js",
+  "scripts": {
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "Thomas Monzel <tom.monzel@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "express": "^4.16.3",
+    "riot": "^3.10.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "popper.js": "^1.14.3",
+    "riot-tag-loader": "^2.0.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}
