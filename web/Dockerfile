@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 # Install application dependencies
 COPY package.json ./
-RUN yarn install
+RUN npm install
 
 # Bundle application source
 COPY server.js ./
