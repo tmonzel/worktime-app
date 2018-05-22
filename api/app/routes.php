@@ -1,5 +1,8 @@
 <?php
 
+use App\Controllers\EmployeesController;
+use App\Controllers\ProjectsController;
+
 // Api routings
 $app->group('/api', function() {
 
