@@ -10,6 +10,8 @@
   "author": "Thomas Monzel <tom.monzel@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "bootstrap": "^4.1.1",
     "express": "^4.16.3",
     "riot": "^3.10.0"

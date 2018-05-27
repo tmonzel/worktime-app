@@ -24,11 +24,11 @@
   </table>
 
   <script>
-    this.runningItem = null;
+    this.runningItem = null;  
 
     deleteProject(e) {
       let item = e.item;
-      let url = "http://localhost:8080/api/projects/" + item.id;
+      let url = process.env.API_URL + "/projects/" + item.id;
       let scope = this;
 
       $.ajax({
@@ -45,7 +45,7 @@
     }
 
     updateProject(id, data) {
-      let url = "http://localhost:8080/api/projects/" + id;
+      let url = process.env.API_URL + "/projects/" + id;
       let scope = this;
 
       $.ajax({

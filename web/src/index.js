@@ -1,6 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/src/jquery';
-
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome';
+import '@fortawesome/fontawesome-free-solid';
 import riot from 'riot';
 import './tags/app.tag';
 

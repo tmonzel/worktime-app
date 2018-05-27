@@ -1,6 +1,6 @@
 <app>
   <div class="container">
-    <h1 class="my-5">Current projects</h1>
+    <h1 class="my-5"><i class="fas fa-user"></i> Current projects</h1>
     <form class="mb-4">
       <div class="form-row">
         <div class="col mb-4">
@@ -35,7 +35,7 @@
       let scope = this;
       
       $.ajax({
-        url: 'http://localhost:8080/api/projects',
+        url: process.env.API_URL + '/projects',
         method: 'POST',
         data: { 
           employee_id: employeeField.value, 
@@ -56,7 +56,7 @@
 
     changeEmployee(id) {      
       $.ajax({
-        url: 'http://localhost:8080/api/projects?employee_id=' + id
+        url: process.env.API_URL + '/projects?employee_id=' + id
       }).done(this.populateProjects);
     }
 
@@ -73,7 +73,7 @@
 
     this.on('mount', function() {
       $.ajax({
-        url: 'http://localhost:8080/api/employees',
+        url: process.env.API_URL + '/employees',
         method: 'GET'
       }).done(this.populateEmployees);
     });
